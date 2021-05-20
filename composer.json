@@ -1,0 +1,45 @@
+{
+    "name": "churakovmike/laravel-delayed-events",
+    "description": "Laravel delayed event system",
+    "type": "library",
+    "keywords": [
+        "Laravel",
+        "Laravel events",
+        "delayed events",
+        "Laravel dispatcher",
+        "Event dispatcher",
+        "Event delayed dispatcher"
+    ],
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Churakov Mike",
+            "email": "churakovmike@mail.ru",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-json": "*",
+        "illuminate/support": "^7|^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChurakovMike\\DelayedEvents\\": "src/"
+        },
+        "classmap": [
+            "src/"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ChurakovMike\\DelayedEvents\\DelayedEventServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
