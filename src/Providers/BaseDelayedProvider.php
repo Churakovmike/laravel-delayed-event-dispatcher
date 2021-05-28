@@ -102,7 +102,7 @@ class BaseDelayedProvider extends EventServiceProvider
     public function boot(): void
     {
         $this->publishes([
-            __DIR__ . '/app/Providers' => base_path('/DelayedEventServiceProvider.php'),
+            __DIR__ => base_path('app/Providers'),
         ], 'providers');
 
         parent::boot();
